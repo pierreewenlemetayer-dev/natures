@@ -18,6 +18,6 @@ def main():
     assert all(words[w]==c for w,c in base.items()), "Corpus pilote altéré"
     assert all(words[r["mot"]]==r["classes_proposees"] for r in review), "Lot 01 altéré"
     assert not set(base).intersection(r["mot"] for r in review)
-    assert Counter(r["statut"] for r in review)=={"arbitrage_valide":12,"controle_initial_sans_alerte":68}
-    print(json.dumps({"corpus_elargi":len(words),"arbitrages_pilote":len(decisions),"arbitrages_lot01":12,"lot01_sans_alerte":68,"publication":False},ensure_ascii=False,indent=2))
+    assert Counter(r["statut"] for r in review)=={"arbitrage_valide":12,"revue_grammaticale_interne":68}
+    print(json.dumps({"corpus_elargi":len(words),"arbitrages_pilote":len(decisions),"arbitrages_lot01":12,"lot01_revue_interne":68,"publication":False},ensure_ascii=False,indent=2))
 if __name__=="__main__": main()
