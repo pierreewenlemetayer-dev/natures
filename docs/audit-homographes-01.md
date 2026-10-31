@@ -3,8 +3,8 @@
 ## Objet
 Audit de cohérence de quelques formes du corpus élargi de 268 mots, **sans modification des arbitrages ni des réponses du jeu**. Il s'agit de pistes de vérification, et non d'une validation lexicographique indépendante.
 
-## Anomalie probable à résoudre avant publication
-- **son** : le corpus ne retient que `déterminant:possessif`. Pourtant **un son** (bruit, son musical) est un nom commun autonome. Proposition à vérifier : ajouter `nom`.
+## Anomalie confirmée à corriger avant publication
+- **son** : le corpus ne retient que `déterminant:possessif`. Pourtant **un son** (bruit, son musical) est un nom commun autonome. La correction retenue est d'ajouter `nom` dans le corpus élargi de test.
 
 ## Règle pédagogique confirmée : verbes conjugués exclus
 Décision déjà arrêtée et confirmée par l'utilisateur : **seuls les infinitifs sont reconnus comme verbes dans Natures**. Les formes **marche**, **ferme**, **livre** et **table** ne reçoivent donc **pas** la classe « verbe », même si elles correspondent aussi à des formes conjuguées hors du cadre du jeu. **Ce n'est pas une anomalie du corpus et ne nécessite pas d'arbitrage supplémentaire.**
