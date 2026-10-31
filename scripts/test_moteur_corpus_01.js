@@ -15,7 +15,7 @@ const closed = new Set(['préposition','coordination','subordination','détermin
 const source = app.match(/function build\(\)\{[\s\S]*?\n\}/);
 assert(source, 'Fonction build() introuvable');
 const sample = vm.runInNewContext(
-  '(function(data, random){const main=x=>x.split(\':\')[0];'+source[0]+';return build();})',
+  `(function(data, random){const main=x=>x.split(':')[0];${source[0]};return build();})`,
   {Math,Error,Set}
 );
 let trials=2000;
