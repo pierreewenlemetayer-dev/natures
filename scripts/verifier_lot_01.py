@@ -27,9 +27,9 @@ def main():
             assert row["classes_proposees"] == arbitrages[word]
         else:
             assert row["classes_proposees"] == initial[word]
-            assert row["statut"] == "controle_initial_sans_alerte", word
+            assert row["statut"] == "revue_grammaticale_interne", word
     counts = Counter(row["statut"] for row in review)
-    assert counts == {"arbitrage_valide": 12, "controle_initial_sans_alerte": 68}
+    assert counts == {"arbitrage_valide": 12, "revue_grammaticale_interne": 68}
     print(json.dumps({"base": len(base), "lot": len(initial), "statuts": dict(counts), "publication": False}, ensure_ascii=False, indent=2))
 
 if __name__ == "__main__":
