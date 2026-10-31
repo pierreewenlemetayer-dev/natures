@@ -25,6 +25,13 @@ function build(){
  if(Math.random()<0.10)take('interjection');
  if(Math.random()<0.10)take('onomatopée');
  const categories=['adjectif','verbe','adverbe','préposition','coordination','subordination','déterminant','pronom'];
+ // Garantir au moins deux questions ciblant les classes fermées.
+ const closed=['préposition','coordination','subordination','déterminant','pronom'];
+ for(const category of random([...closed])){
+   if(selected.filter(x=>closed.includes(x.category)).length>=2)break;
+   take(category);
+ }
+ if(selected.filter(x=>closed.includes(x.category)).length<2)throw Error('Corpus insuffisant pour deux questions de classes fermées');
  // Favoriser d'abord la diversité des classes, puis autoriser une seconde occurrence.
  for(const limit of [1,2]){
    for(const category of random([...categories])){
