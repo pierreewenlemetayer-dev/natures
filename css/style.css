@@ -46,3 +46,29 @@ header .print-tools{margin:-12px auto 18px}
 .subchoices button.correct{background:#d5f3df;border-color:#3c9861;color:#215d37;opacity:1}
 .subchoices button.wrong{background:#ffe0e0;border-color:#d35c5c;color:#922f2f;opacity:1}
 @media(max-width:700px){.status{gap:5px}.student-name{font-size:.75rem;gap:3px}.student-name input{width:clamp(60px,19vw,110px);padding:5px 4px;font-size:.75rem}#progress,#score{font-size:.8rem}}
+
+
+/* Palette 6 — Crème & pétrole. Les couleurs de validation restent vert/rouge. */
+:root{color:#285b60;background:#fffcf5}
+h1{color:#306f75}
+h1 a:focus-visible{outline-color:#306f75}
+.game{background:#fffefa;border-color:#e5d9c6;box-shadow:0 10px 28px #8b80651a}
+.word{background:#fff9eb;border-color:#d7bd91;color:#285b60}
+.word-text,.feedback,.feedback strong,.status{color:#285b60}
+button{background:#fff1d8;border-color:#d7bd91;color:#285b60}
+.group button{background:#fff1d8;border-color:#d7bd91;color:#285b60}
+.group button:hover:not(:disabled){background:#f9e5c1}
+button:focus-visible{outline-color:#306f75}
+.subchoices button{background:#dcefed;border-color:#86b4af;color:#285b60}
+.subchoices button:hover:not(:disabled){background:#c8e3df;border-color:#679e99}
+.subchoices button:focus-visible{outline-color:#306f75}
+.next{background:#306f75;border-color:#306f75;color:#fff}
+.next:hover:not(:disabled){background:#285b60;border-color:#285b60}
+.student-name input{color:#285b60;border-color:#86b4af}
+.student-name input:focus-visible{outline-color:#306f75}
+.text-link,.print-options .text-link{color:#285b60}
+.text-link:hover:not(:disabled),.print-options .text-link:hover:not(:disabled){color:#306f75}
+.print-options button{background:transparent;border:0;color:#285b60}
+footer{color:#647a77}
+button.correct,.subchoices button.correct{background:#d5f3df;border-color:#3c9861;color:#215d37}
+button.wrong,.subchoices button.wrong{background:#ffe0e0;border-color:#d35c5c;color:#922f2f}
