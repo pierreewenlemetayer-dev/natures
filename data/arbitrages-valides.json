@@ -1,0 +1,218 @@
+{
+  "or": [
+    "nom",
+    "coordination"
+  ],
+  "avant": [
+    "préposition",
+    "adverbe",
+    "nom"
+  ],
+  "pouvoir": [
+    "verbe",
+    "nom"
+  ],
+  "devoir": [
+    "verbe",
+    "nom"
+  ],
+  "courant": [
+    "nom",
+    "adjectif"
+  ],
+  "français": [
+    "nom",
+    "adjectif"
+  ],
+  "même": [
+    "adjectif",
+    "adverbe"
+  ],
+  "bien": [
+    "adverbe",
+    "nom"
+  ],
+  "tout": [
+    "déterminant:indéfini",
+    "pronom:indéfini",
+    "adverbe",
+    "nom"
+  ],
+  "où": [
+    "pronom:relatif",
+    "adverbe"
+  ],
+  "que": [
+    "subordination",
+    "pronom:relatif",
+    "pronom:interrogatif",
+    "adverbe"
+  ],
+  "pendant": [
+    "préposition",
+    "adjectif"
+  ],
+  "après": [
+    "préposition",
+    "adverbe"
+  ],
+  "contre": [
+    "préposition",
+    "adverbe",
+    "nom"
+  ],
+  "vers": [
+    "préposition",
+    "nom"
+  ],
+  "si": [
+    "subordination",
+    "adverbe",
+    "nom"
+  ],
+  "comme": [
+    "subordination",
+    "adverbe"
+  ],
+  "savoir": [
+    "verbe",
+    "nom"
+  ],
+  "plus": [
+    "adverbe",
+    "nom"
+  ],
+  "moins": [
+    "adverbe",
+    "nom"
+  ],
+  "mal": [
+    "adverbe",
+    "nom"
+  ],
+  "juste": [
+    "adjectif",
+    "adverbe",
+    "nom"
+  ],
+  "fort": [
+    "adjectif",
+    "adverbe",
+    "nom"
+  ],
+  "ensemble": [
+    "adverbe",
+    "nom"
+  ],
+  "seul": [
+    "adjectif"
+  ],
+  "cher": [
+    "adjectif",
+    "adverbe"
+  ],
+  "net": [
+    "adjectif",
+    "adverbe"
+  ],
+  "haut": [
+    "adjectif",
+    "adverbe",
+    "nom"
+  ],
+  "bas": [
+    "adjectif",
+    "adverbe",
+    "nom"
+  ],
+  "double": [
+    "adjectif",
+    "nom",
+    "adverbe"
+  ],
+  "clair": [
+    "adjectif",
+    "adverbe",
+    "nom"
+  ],
+  "droit": [
+    "adjectif",
+    "adverbe",
+    "nom"
+  ],
+  "faux": [
+    "adjectif",
+    "adverbe",
+    "nom"
+  ],
+  "vrai": [
+    "adjectif",
+    "adverbe",
+    "nom"
+  ],
+  "propre": [
+    "adjectif",
+    "nom"
+  ],
+  "vide": [
+    "adjectif"
+  ],
+  "certain": [
+    "adjectif",
+    "déterminant:indéfini",
+    "pronom:indéfini"
+  ],
+  "autre": [
+    "adjectif",
+    "déterminant:indéfini",
+    "pronom:indéfini"
+  ],
+  "aucun": [
+    "déterminant:indéfini",
+    "pronom:indéfini"
+  ],
+  "plusieurs": [
+    "déterminant:indéfini",
+    "pronom:indéfini"
+  ],
+  "quelque": [
+    "déterminant:indéfini",
+    "adverbe"
+  ],
+  "tel": [
+    "adjectif",
+    "déterminant:indéfini",
+    "pronom:indéfini"
+  ],
+  "leur": [
+    "pronom:personnel",
+    "déterminant:possessif"
+  ],
+  "leurs": [
+    "déterminant:possessif",
+    "pronom:possessif"
+  ],
+  "mien": [
+    "pronom:possessif",
+    "adjectif"
+  ],
+  "bravo": [
+    "interjection",
+    "nom"
+  ],
+  "boum": [
+    "onomatopée",
+    "nom"
+  ],
+  "clic": [
+    "onomatopée",
+    "nom"
+  ],
+  "hélas": [
+    "interjection",
+    "adverbe"
+  ],
+  "oh": [
+    "interjection"
+  ]
+}
