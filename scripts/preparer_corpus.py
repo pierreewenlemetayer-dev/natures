@@ -13,7 +13,21 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 FREQUENCY_MIN = 1.0  # seuil de la bande « peu courant » de Lexi Lab
-POS = {"NOM": "nom", "ADJ": "adjectif", "ADV": "adverbe", "VER": "verbe"}
+POS = {
+    "NOM": "nom", "ADJ": "adjectif", "ADV": "adverbe", "VER": "verbe",
+    "PRE": "préposition", "CON": "conjonction-à-préciser",
+    "ART:def": "déterminant:article défini",
+    "ART:ind": "déterminant:article indéfini",
+    "ADJ:pos": "déterminant:possessif",
+    "ADJ:dem": "déterminant:démonstratif",
+    "ADJ:ind": "déterminant:indéfini",
+    "ADJ:int": "déterminant:interrogatif-ou-exclamatif",
+    "PRO:per": "pronom:personnel", "PRO:rel": "pronom:relatif",
+    "PRO:pos": "pronom:possessif", "PRO:dem": "pronom:démonstratif",
+    "PRO:ind": "pronom:indéfini", "PRO:int": "pronom:interrogatif",
+    "ONO": "onomatopée",
+    "AUX": "verbe",
+}
 SIMPLE_WORD = re.compile(r"^[^\W\d_]+(?:-[^\W\d_]+)*$", re.UNICODE)
 
 def extract(path):
@@ -38,10 +52,10 @@ def extract(path):
             if not SIMPLE_WORD.fullmatch(word):
                 stats["forme_exclue"] += 1
                 continue
-            if pos == "VER" and row["9_InfoVER"].strip() != "inf":
+            if pos == "VER" and "inf" not in row["9_InfoVER"].split(","):
                 stats["verbe_non_infinitif"] += 1
                 continue
-            candidates[word].add(POS[pos])
+            candidates[word].add(POS[pos])\n            # Les sous-types non explicités par Lexique 4 restent à contrôler.
             stats["lignes_retenues"] += 1
     return candidates, stats
 
