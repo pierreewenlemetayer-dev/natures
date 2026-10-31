@@ -164,8 +164,8 @@
     "classes_proposees": [
       "adjectif"
     ],
-    "statut": "suspendu",
-    "motif": "Emploi nominal attesté : « faire son possible » ; adjectif seul incomplet."
+    "statut": "arbitrage_valide",
+    "motif": "Décision explicite de l'utilisateur : adjectif. Remplace la réserve précédente."
   },
   {
     "mot": "génial",
@@ -332,8 +332,8 @@
     "classes_proposees": [
       "adverbe"
     ],
-    "statut": "suspendu",
-    "motif": "Emploi nominal dans le domaine du spectacle : « un encore » ; vérifier la pertinence scolaire."
+    "statut": "arbitrage_valide",
+    "motif": "Décision explicite de l'utilisateur : adverbe. Remplace la réserve précédente."
   },
   {
     "mot": "beaucoup",
@@ -354,10 +354,11 @@
   {
     "mot": "tard",
     "classes_proposees": [
-      "adverbe"
+      "adverbe",
+      "nom"
     ],
-    "statut": "suspendu",
-    "motif": "Emplois nominaux rares ou figés à examiner ; contrôle complémentaire prudent."
+    "statut": "arbitrage_valide",
+    "motif": "Décision explicite de l'utilisateur : adverbe + nom. Remplace la réserve précédente."
   },
   {
     "mot": "seulement",
@@ -386,10 +387,11 @@
   {
     "mot": "enfin",
     "classes_proposees": [
-      "adverbe"
+      "adverbe",
+      "interjection"
     ],
-    "statut": "suspendu",
-    "motif": "Peut fonctionner comme interjection (« Enfin ! ») ; adverbe seul potentiellement incomplet."
+    "statut": "arbitrage_valide",
+    "motif": "Décision explicite de l'utilisateur : adverbe + interjection. Remplace la réserve précédente."
   },
   {
     "mot": "loin",
