@@ -41,5 +41,8 @@ header .print-tools{margin:-12px auto 18px}
 #progress{justify-self:center;white-space:nowrap}
 #score{justify-self:end;white-space:nowrap}
 .group button{color:#243f78}
-.next{color:#243f78}
+.next{background:#92546e;border-color:#92546e;color:#fff}
+.next:hover:not(:disabled){background:#7b425a;border-color:#7b425a}
+.subchoices button.correct{background:#d5f3df;border-color:#3c9861;color:#215d37;opacity:1}
+.subchoices button.wrong{background:#ffe0e0;border-color:#d35c5c;color:#922f2f;opacity:1}
 @media(max-width:700px){.status{gap:5px}.student-name{font-size:.75rem;gap:3px}.student-name input{width:clamp(60px,19vw,110px);padding:5px 4px;font-size:.75rem}#progress,#score{font-size:.8rem}}
