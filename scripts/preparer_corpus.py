@@ -55,6 +55,19 @@ def extract(path):
             if pos in {"VER", "AUX"} and "inf" not in row["9_InfoVER"].split(","):
                 stats["verbe_non_infinitif"] += 1
                 continue
+            # Fréquence de l'analyse grammaticale, et non seulement de la forme.
+            # Une forme fréquente peut avoir une acception marginale.
+            try:
+                analyse_freq = float(row["10_FreqMot"])
+            except (ValueError, TypeError):
+                stats["analyse_frequence_invalide"] += 1
+                continue
+            if not (analyse_freq >= FREQUENCY_MIN):
+                stats["analyse_sous_seuil"] += 1
+                continue
+            if pos not in {"NOM", "ADJ", "ADV", "VER", "AUX"}:
+                stats["classe_fermee_a_traiter_separement"] += 1
+                continue
             candidates[word].add(POS[pos])
             # Les sous-types non explicités par Lexique 4 restent à contrôler.
             stats["lignes_retenues"] += 1
