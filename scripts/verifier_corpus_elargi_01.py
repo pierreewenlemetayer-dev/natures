@@ -17,6 +17,10 @@ def main():
     assert all(words[w]==c for w,c in decisions.items()), "Arbitrages du corpus pilote non respectés"
     assert all(words[w]==c for w,c in base.items()), "Corpus pilote altéré"
     assert words["son"] == ["déterminant:possessif", "nom"], "Deux natures de son manquantes"
+    for mot in ("quel", "quelle"):
+        assert words[mot] == ["déterminant:interrogatif", "déterminant:exclamatif"], f"Classes incorrectes pour {mot}"
+    for mot in ("marche", "ferme", "livre", "table"):
+        assert "verbe" not in words[mot], f"Forme conjuguée classée comme verbe : {mot}"
     assert all(words[r["mot"]]==r["classes_proposees"] for r in review), "Lot 01 altéré"
     assert not set(base).intersection(r["mot"] for r in review)
     assert Counter(r["statut"] for r in review)=={"arbitrage_valide":12,"revue_grammaticale_interne":68}
