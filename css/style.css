@@ -72,3 +72,7 @@ button:focus-visible{outline-color:#306f75}
 footer{color:#647a77}
 button.correct,.subchoices button.correct{background:#d5f3df;border-color:#3c9861;color:#215d37}
 button.wrong,.subchoices button.wrong{background:#ffe0e0;border-color:#d35c5c;color:#922f2f}
+
+/* Lien d'impression du bandeau : aucun fond hérité de l'ancien thème rose. */
+#print-toggle{background:transparent;border:0;color:#285b60;padding:4px 7px;border-radius:0}
+#print-toggle:hover:not(:disabled){background:transparent;color:#306f75}
