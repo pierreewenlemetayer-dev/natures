@@ -1,0 +1,54 @@
+{
+  "donc": [
+    "adverbe",
+    "coordination"
+  ],
+  "son": [
+    "déterminant:possessif",
+    "nom"
+  ],
+  "quel": [
+    "déterminant:interrogatif",
+    "déterminant:exclamatif"
+  ],
+  "quelle": [
+    "déterminant:interrogatif",
+    "déterminant:exclamatif"
+  ],
+  "en": [
+    "préposition",
+    "pronom:adverbial"
+  ],
+  "y": [
+    "pronom:adverbial"
+  ],
+  "marche": [
+    "nom"
+  ],
+  "livre": [
+    "nom"
+  ],
+  "table": [
+    "nom"
+  ],
+  "ferme": [
+    "nom",
+    "adjectif"
+  ],
+  "mais": [
+    "nom",
+    "coordination"
+  ],
+  "mienne": [
+    "adjectif",
+    "pronom:possessif"
+  ],
+  "miennes": [
+    "adjectif",
+    "pronom:possessif"
+  ],
+  "nôtres": [
+    "adjectif",
+    "pronom:possessif"
+  ]
+}

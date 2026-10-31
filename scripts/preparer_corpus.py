@@ -1,0 +1,99 @@
+#!/usr/bin/env python3
+"""Préparation AUDITABLE du corpus Natures à partir de Lexique400.tsv.
+
+Usage : python scripts/preparer_corpus.py /chemin/Lexique400.tsv
+Ce script produit un inventaire de candidats, PAS un corpus publiable.
+La validation des catégories ambiguës et des sous-types reste indispensable.
+"""
+import csv
+import json
+import re
+import sys
+from collections import Counter, defaultdict
+from pathlib import Path
+
+FREQUENCY_MIN = 1.0  # seuil de la bande « peu courant » de Lexi Lab
+POS = {
+    "NOM": "nom", "ADJ": "adjectif", "ADV": "adverbe", "VER": "verbe",
+    "PRE": "préposition", "CON": "conjonction-à-préciser",
+    "ART:def": "déterminant:article défini",
+    "ART:ind": "déterminant:article indéfini",
+    "ADJ:pos": "déterminant:possessif",
+    "ADJ:dem": "déterminant:démonstratif",
+    "ADJ:ind": "déterminant:indéfini",
+    "ADJ:int": "déterminant:interrogatif-ou-exclamatif",
+    "PRO:per": "pronom:personnel", "PRO:rel": "pronom:relatif",
+    "PRO:pos": "pronom:possessif", "PRO:dem": "pronom:démonstratif",
+    "PRO:ind": "pronom:indéfini", "PRO:int": "pronom:interrogatif",
+    "ONO": "onomatopée",
+    "AUX": "verbe",
+}
+SIMPLE_WORD = re.compile(r"^[^\W\d_]+(?:-[^\W\d_]+)*$", re.UNICODE)
+
+def extract(path):
+    candidates = defaultdict(set)
+    stats = Counter()
+    with open(path, encoding="utf-8", newline="") as stream:
+        for row in csv.DictReader(stream, delimiter="\t"):
+            stats["lignes_source"] += 1
+            word = row["1_Mot"].strip().lower()
+            pos = row["5_Cgram"].strip()
+            if pos not in POS:
+                stats["classe_non_couverte"] += 1
+                continue
+            try:
+                freq = float(row["11_FreqOrtho"])
+            except (ValueError, TypeError):
+                stats["frequence_invalide"] += 1
+                continue
+            if freq < FREQUENCY_MIN:
+                stats["sous_seuil"] += 1
+                continue
+            if not SIMPLE_WORD.fullmatch(word) or len(word) < 2:
+                stats["forme_exclue"] += 1
+                continue
+            if pos in {"VER", "AUX"} and "inf" not in row["9_InfoVER"].split(","):
+                stats["verbe_non_infinitif"] += 1
+                continue
+            # Fréquence de l'analyse grammaticale, et non seulement de la forme.
+            # Une forme fréquente peut avoir une acception marginale.
+            try:
+                analyse_freq = float(row["10_FreqMot"])
+            except (ValueError, TypeError):
+                stats["analyse_frequence_invalide"] += 1
+                continue
+            if not (analyse_freq >= FREQUENCY_MIN):
+                stats["analyse_sous_seuil"] += 1
+                continue
+            if pos not in {"NOM", "ADJ", "ADV", "VER", "AUX"}:
+                stats["classe_fermee_a_traiter_separement"] += 1
+                continue
+            candidates[word].add(POS[pos])
+            # Les sous-types non explicités par Lexique 4 restent à contrôler.
+            stats["lignes_retenues"] += 1
+    return candidates, stats
+
+def main():
+    if len(sys.argv) != 2:
+        raise SystemExit("Usage : python scripts/preparer_corpus.py Lexique400.tsv")
+    words, stats = extract(sys.argv[1])
+    out = Path("corpus-a-verifier.json")
+    out.write_text(json.dumps(
+        [{"mot": word, "classes_candidates": sorted(classes)}
+         for word, classes in sorted(words.items())],
+        ensure_ascii=False, indent=2), encoding="utf-8")
+    # Inventaire séparé : classes ouvertes sans ambiguïté détectée.
+    # Cette liste exige encore une vérification lexicale avant publication.
+    classes_ouvertes = {"nom", "adjectif", "adverbe", "verbe"}
+    prudents = [[mot, [next(iter(classes))]] for mot, classes in sorted(words.items())
+                if len(classes) == 1 and next(iter(classes)) in classes_ouvertes]
+    Path("corpus-prudent-a-verifier.json").write_text(
+        json.dumps(prudents, ensure_ascii=False, indent=2), encoding="utf-8")
+    stats["formes_prudentes_a_verifier"] = len(prudents)
+    stats["formes_distinctes_candidates"] = len(words)
+    stats["formes_ambiguës_candidates"] = sum(len(v)>1 for v in words.values())
+    print(json.dumps(stats, ensure_ascii=False, indent=2))
+    print(f"Inventaire à vérifier : {out} (ne pas publier directement)")
+
+if __name__ == "__main__":
+    main()
