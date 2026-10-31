@@ -6,14 +6,8 @@ Audit de cohérence de quelques formes du corpus élargi de 268 mots, **sans mod
 ## Anomalie probable à résoudre avant publication
 - **son** : le corpus ne retient que `déterminant:possessif`. Pourtant **un son** (bruit, son musical) est un nom commun autonome. Proposition à vérifier : ajouter `nom`.
 
-## Choix méthodologique à expliciter
-Le projet avait prévu de n'importer que les infinitifs pour la classe « verbe ». Toutefois, les formes présentées hors contexte peuvent aussi correspondre à des verbes conjugués :
-- **marche** : nom ; « je marche » (verbe).
-- **ferme** : nom et adjectif ; « je ferme » (verbe).
-- **livre** : nom ; « je livre » (verbe).
-- **table** : nom ; « je table sur… » (verbe).
-
-Si les formes verbales conjuguées restent volontairement exclues, il faut l'expliquer dans la règle pédagogique et accepter que certaines réponses grammaticalement possibles ne soient pas reconnues. L'alternative est de **retirer du jeu les formes homographes de verbes conjugués** jusqu'à mise en place d'un contrôle exhaustif. Aucune de ces deux options n'est appliquée ici.
+## Règle pédagogique confirmée : verbes conjugués exclus
+Décision déjà arrêtée et confirmée par l'utilisateur : **seuls les infinitifs sont reconnus comme verbes dans Natures**. Les formes **marche**, **ferme**, **livre** et **table** ne reçoivent donc **pas** la classe « verbe », même si elles correspondent aussi à des formes conjuguées hors du cadre du jeu. **Ce n'est pas une anomalie du corpus et ne nécessite pas d'arbitrage supplémentaire.**
 
 ## Autres vérifications ciblées
 - **mais** : la réponse « nom » pourrait relever du pluriel de « mai » ; vérifier la pertinence scolaire et la fréquence de cet emploi.
