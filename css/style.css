@@ -40,8 +40,6 @@ header .print-tools{margin:-12px auto 18px}
 .student-name input:focus-visible{outline:2px solid #385ba9;outline-offset:2px}
 #progress{justify-self:center;white-space:nowrap}
 #score{justify-self:end;white-space:nowrap}
-.group button{color:#243f78;border-color:#8199d1}
-.group button:hover:not(:disabled){background:#e9efff}
-.next{background:#243f78;border-color:#243f78;color:white}
-.next:hover:not(:disabled){background:#385ba9}
+.group button{color:#243f78}
+.next{color:#243f78}
 @media(max-width:700px){.status{gap:5px}.student-name{font-size:.75rem;gap:3px}.student-name input{width:clamp(60px,19vw,110px);padding:5px 4px;font-size:.75rem}#progress,#score{font-size:.8rem}}
