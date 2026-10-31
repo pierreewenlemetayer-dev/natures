@@ -16,6 +16,7 @@ def main():
     assert all(isinstance(w,str) and w and isinstance(c,list) and c and len(c)==len(set(c)) for w,c in expanded)
     assert all(words[w]==c for w,c in decisions.items()), "Arbitrages du corpus pilote non respectés"
     assert all(words[w]==c for w,c in base.items()), "Corpus pilote altéré"
+    assert words["son"] == ["déterminant:possessif", "nom"], "Deux natures de son manquantes"
     assert all(words[r["mot"]]==r["classes_proposees"] for r in review), "Lot 01 altéré"
     assert not set(base).intersection(r["mot"] for r in review)
     assert Counter(r["statut"] for r in review)=={"arbitrage_valide":12,"revue_grammaticale_interne":68}
