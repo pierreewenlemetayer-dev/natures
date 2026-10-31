@@ -17,7 +17,8 @@ def main():
     assert len(review) == 80 and {r["mot"] for r in review} == set(initial)
     assert len({r["mot"] for r in review}) == 80
     arbitrages = {"possible": ["adjectif"], "encore": ["adverbe"], "enfin": ["adverbe", "interjection"], "tard": ["adverbe", "nom"]}
-    flagged = {"génial", "bizarre", "libre", "vraie", "exact", "triste", "loin", "presque"}
+    arbitrages.update({w: ["adjectif"] for w in ("génial", "bizarre", "libre", "vraie", "exact", "triste")})
+    arbitrages.update({w: ["adverbe"] for w in ("loin", "presque")})
     for row in review:
         word = row["mot"]
         assert row["classes_proposees"] and len(set(row["classes_proposees"])) == len(row["classes_proposees"])
@@ -26,10 +27,9 @@ def main():
             assert row["classes_proposees"] == arbitrages[word]
         else:
             assert row["classes_proposees"] == initial[word]
-            expected = "controle_complementaire" if word in flagged else "controle_initial_sans_alerte"
-            assert row["statut"] == expected, word
+            assert row["statut"] == "controle_initial_sans_alerte", word
     counts = Counter(row["statut"] for row in review)
-    assert counts == {"arbitrage_valide": 4, "controle_complementaire": 8, "controle_initial_sans_alerte": 68}
+    assert counts == {"arbitrage_valide": 12, "controle_initial_sans_alerte": 68}
     print(json.dumps({"base": len(base), "lot": len(initial), "statuts": dict(counts), "publication": False}, ensure_ascii=False, indent=2))
 
 if __name__ == "__main__":
