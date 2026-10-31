@@ -10,3 +10,8 @@
   .subchoices button{font-size:1rem;padding:12px 15px}
   .group button{font-size:1.04rem}
 }
+
+/* Sous-catégories : contraste visuel distinct des catégories principales. */
+.subchoices button{background:#e9efff;border-color:#8199d1;color:#243f78}
+.subchoices button:hover:not(:disabled){background:#d5e2ff;border-color:#5879c2}
+.subchoices button:focus-visible{outline-color:#385ba9}
