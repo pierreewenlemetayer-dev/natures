@@ -1,0 +1,30 @@
+name: Vérification Natures sur ordinateur
+
+on:
+  push:
+    branches:
+      - developpement-corpus-lexique4
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  navigateur-ordinateur:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Installer Playwright
+        run: |
+          npm install --no-save @playwright/test
+          npx playwright install --with-deps chromium
+      - name: Vérifier le corpus
+        run: python3 scripts/verifier_corpus_elargi_01.py
+      - name: Tester le tirage des questions
+        run: node scripts/test_moteur_corpus_01.js
+      - name: Tester les interactions sur ordinateur dans Chromium
+        run: npx playwright test tests/test-navigateur-ordinateur.spec.js --reporter=line --workers=1
