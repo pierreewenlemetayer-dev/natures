@@ -172,8 +172,8 @@
     "classes_proposees": [
       "adjectif"
     ],
-    "statut": "controle_complementaire",
-    "motif": "Peut fonctionner comme interjection expressive (« Génial ! »), emploi elliptique à distinguer d'un adjectif."
+    "statut": "arbitrage_valide",
+    "motif": "Arbitrage explicite de l'utilisateur : adjectif uniquement."
   },
   {
     "mot": "facile",
@@ -196,8 +196,8 @@
     "classes_proposees": [
       "adjectif"
     ],
-    "statut": "controle_complementaire",
-    "motif": "Peut être substantivé (« le bizarre »), emploi littéraire ; ne pas retenir automatiquement."
+    "statut": "arbitrage_valide",
+    "motif": "Arbitrage explicite de l'utilisateur : adjectif uniquement."
   },
   {
     "mot": "mauvaise",
@@ -212,8 +212,8 @@
     "classes_proposees": [
       "adjectif"
     ],
-    "statut": "controle_complementaire",
-    "motif": "Peut être substantivé (« le libre »), emploi spécialisé ; à écarter sans confirmation."
+    "statut": "arbitrage_valide",
+    "motif": "Arbitrage explicite de l'utilisateur : adjectif uniquement."
   },
   {
     "mot": "jolie",
@@ -228,16 +228,16 @@
     "classes_proposees": [
       "adjectif"
     ],
-    "statut": "controle_complementaire",
-    "motif": "Emploi nominal rare ou elliptique (« la vraie ») ; vérifier s'il s'agit d'un adjectif substantivé."
+    "statut": "arbitrage_valide",
+    "motif": "Arbitrage explicite de l'utilisateur : adjectif uniquement."
   },
   {
     "mot": "exact",
     "classes_proposees": [
       "adjectif"
     ],
-    "statut": "controle_complementaire",
-    "motif": "« Exact ! » est une réponse elliptique adjectivale ; ne pas ajouter interjection sans preuve."
+    "statut": "arbitrage_valide",
+    "motif": "Arbitrage explicite de l'utilisateur : adjectif uniquement."
   },
   {
     "mot": "dangereux",
@@ -260,8 +260,8 @@
     "classes_proposees": [
       "adjectif"
     ],
-    "statut": "controle_complementaire",
-    "motif": "« le triste » est une substantivation possible ; vérifier sa pertinence scolaire."
+    "statut": "arbitrage_valide",
+    "motif": "Arbitrage explicite de l'utilisateur : adjectif uniquement."
   },
   {
     "mot": "différent",
@@ -398,8 +398,8 @@
     "classes_proposees": [
       "adverbe"
     ],
-    "statut": "controle_complementaire",
-    "motif": "« au loin » reste un emploi adverbial ; vérifier les emplois nominaux éventuels."
+    "statut": "arbitrage_valide",
+    "motif": "Arbitrage explicite de l'utilisateur : adverbe uniquement."
   },
   {
     "mot": "plutôt",
@@ -422,8 +422,8 @@
     "classes_proposees": [
       "adverbe"
     ],
-    "statut": "controle_complementaire",
-    "motif": "Dans « presque rien », emploi adverbial ; autres classes non confirmées."
+    "statut": "arbitrage_valide",
+    "motif": "Arbitrage explicite de l'utilisateur : adverbe uniquement."
   },
   {
     "mot": "bientôt",
