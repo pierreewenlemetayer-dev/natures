@@ -32,3 +32,30 @@ NOM 11 733 ; ADJ 5 219 ; VER infinitif 1 494 ; ADV 486 ; PRE 49 ; CON 23 ; ONO 1
 - Appliquer une table explicite de corrections et d'exclusions.
 - Examiner prioritairement les formes multiclasse et les catégories fermées.
 - Tester les tirages et toutes les réponses possibles avant publication.
+
+
+## Réorientation validée : catégories fermées / ouvertes
+
+Les listes de déterminants, pronoms, prépositions et conjonctions déjà décidées pour Natures sont la référence ; Lexique 4 n'a pas vocation à les reconstruire. Le fichier pilote `js/data.js` contient un ensemble de ces formes, mais **ne prouve pas à lui seul l'exhaustivité** des listes décidées. Avant toute publication, vérifier leur exhaustivité dans les décisions précédentes.
+
+Pour Lexique 4, limiter l'extraction principale à `NOM`, `ADJ`, `ADV`, `VER` et `AUX` (infinitif seulement). Les interjections et onomatopées restent des listes contrôlées, enrichissables après examen individuel.
+
+### Mesure reproductible de cette extraction ouverte
+
+Calcul effectué sur `Lexique400.tsv`, seuil `11_FreqOrtho >= 1`, mots alphabétiques ou composés avec trait d'union, longueur >= 2, et verbes/auxiliaires à `9_InfoVER` commençant par `inf` :
+
+| Catégorie candidate | Lignes retenues |
+|---|---:|
+| Noms | 11 733 |
+| Adjectifs | 5 219 |
+| Adverbes | 486 |
+| Infinitifs | 1 169 |
+| **Total lignes** | **18 607** |
+
+**15 749 formes distinctes**, dont **2 804** possèdent au moins deux classes ouvertes candidates. Ces nombres diffèrent de l'inventaire initial parce que les classes fermées sont désormais exclues de l'extraction automatique.
+
+### Avertissement essentiel sur les homographes
+
+La fréquence orthographique s'applique à **tous les emplois de la forme**. Ainsi `sans` ressort artificiellement comme nom candidat dans l'extraction ouverte, `le` comme nom, `un` comme nom, alors que ces emplois ne doivent pas être acceptés automatiquement dans Natures. **Même les candidats mono-classe nécessitent donc une revue et des exclusions explicites.**
+
+Aucune de ces extractions n'a été intégrée au jeu public.
