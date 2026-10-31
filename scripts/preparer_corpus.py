@@ -49,13 +49,14 @@ def extract(path):
             if freq < FREQUENCY_MIN:
                 stats["sous_seuil"] += 1
                 continue
-            if not SIMPLE_WORD.fullmatch(word):
+            if not SIMPLE_WORD.fullmatch(word) or len(word) < 2:
                 stats["forme_exclue"] += 1
                 continue
-            if pos == "VER" and "inf" not in row["9_InfoVER"].split(","):
+            if pos in {"VER", "AUX"} and "inf" not in row["9_InfoVER"].split(","):
                 stats["verbe_non_infinitif"] += 1
                 continue
-            candidates[word].add(POS[pos])\n            # Les sous-types non explicités par Lexique 4 restent à contrôler.
+            candidates[word].add(POS[pos])
+            # Les sous-types non explicités par Lexique 4 restent à contrôler.
             stats["lignes_retenues"] += 1
     return candidates, stats
 
