@@ -69,6 +69,14 @@ def main():
         [{"mot": word, "classes_candidates": sorted(classes)}
          for word, classes in sorted(words.items())],
         ensure_ascii=False, indent=2), encoding="utf-8")
+    # Inventaire séparé : classes ouvertes sans ambiguïté détectée.
+    # Cette liste exige encore une vérification lexicale avant publication.
+    classes_ouvertes = {"nom", "adjectif", "adverbe", "verbe"}
+    prudents = [[mot, [next(iter(classes))]] for mot, classes in sorted(words.items())
+                if len(classes) == 1 and next(iter(classes)) in classes_ouvertes]
+    Path("corpus-prudent-a-verifier.json").write_text(
+        json.dumps(prudents, ensure_ascii=False, indent=2), encoding="utf-8")
+    stats["formes_prudentes_a_verifier"] = len(prudents)
     stats["formes_distinctes_candidates"] = len(words)
     stats["formes_ambiguës_candidates"] = sum(len(v)>1 for v in words.values())
     print(json.dumps(stats, ensure_ascii=False, indent=2))
