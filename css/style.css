@@ -23,3 +23,12 @@
 .print-options[hidden]{display:none}
 .print-options button{background:#e9efff;border-color:#8199d1;color:#243f78}
 .print-options button:hover{background:#d5e2ff}
+
+/* Liens d'impression discrets et couleur des informations de partie. */
+header .print-tools{margin:-12px auto 18px}
+.text-link,.print-options .text-link{font:inherit;font-size:.91rem;font-weight:normal;background:transparent;border:0;border-radius:0;color:#243f78;text-decoration:underline;text-underline-offset:3px;padding:4px 7px;min-height:0;cursor:pointer}
+.text-link:hover:not(:disabled),.print-options .text-link:hover:not(:disabled){background:transparent;color:#385ba9}
+.print-options{margin-top:4px;gap:16px}
+.result-print{margin-top:2px;font-size:.88rem}
+.result-print[hidden]{display:none}
+.status,.word,.word-text,.feedback,.feedback strong{color:#243f78}
