@@ -34,5 +34,21 @@
   "ferme": [
     "nom",
     "adjectif"
+  ],
+  "mais": [
+    "nom",
+    "coordination"
+  ],
+  "mienne": [
+    "adjectif",
+    "pronom:possessif"
+  ],
+  "miennes": [
+    "adjectif",
+    "pronom:possessif"
+  ],
+  "nôtres": [
+    "adjectif",
+    "pronom:possessif"
   ]
 }
