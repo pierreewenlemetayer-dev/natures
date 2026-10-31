@@ -1,0 +1,642 @@
+[
+  {
+    "mot": "besoin",
+    "classes_proposees": [
+      "nom"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "accord",
+    "classes_proposees": [
+      "nom"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "père",
+    "classes_proposees": [
+      "nom"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "homme",
+    "classes_proposees": [
+      "nom"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "jour",
+    "classes_proposees": [
+      "nom"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "soir",
+    "classes_proposees": [
+      "nom"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "femme",
+    "classes_proposees": [
+      "nom"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "moment",
+    "classes_proposees": [
+      "nom"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "argent",
+    "classes_proposees": [
+      "nom"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "raison",
+    "classes_proposees": [
+      "nom"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "maman",
+    "classes_proposees": [
+      "nom"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "problème",
+    "classes_proposees": [
+      "nom"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "peur",
+    "classes_proposees": [
+      "nom"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "fille",
+    "classes_proposees": [
+      "nom"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "famille",
+    "classes_proposees": [
+      "nom"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "tête",
+    "classes_proposees": [
+      "nom"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "mère",
+    "classes_proposees": [
+      "nom"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "idée",
+    "classes_proposees": [
+      "nom"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "chance",
+    "classes_proposees": [
+      "nom"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "question",
+    "classes_proposees": [
+      "nom"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "possible",
+    "classes_proposees": [
+      "adjectif"
+    ],
+    "statut": "suspendu",
+    "motif": "Emploi nominal attesté : « faire son possible » ; adjectif seul incomplet."
+  },
+  {
+    "mot": "génial",
+    "classes_proposees": [
+      "adjectif"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "facile",
+    "classes_proposees": [
+      "adjectif"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "difficile",
+    "classes_proposees": [
+      "adjectif"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "bizarre",
+    "classes_proposees": [
+      "adjectif"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "mauvaise",
+    "classes_proposees": [
+      "adjectif"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "libre",
+    "classes_proposees": [
+      "adjectif"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "jolie",
+    "classes_proposees": [
+      "adjectif"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "vraie",
+    "classes_proposees": [
+      "adjectif"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "exact",
+    "classes_proposees": [
+      "adjectif"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "dangereux",
+    "classes_proposees": [
+      "adjectif"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "tranquille",
+    "classes_proposees": [
+      "adjectif"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "triste",
+    "classes_proposees": [
+      "adjectif"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "différent",
+    "classes_proposees": [
+      "adjectif"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "capable",
+    "classes_proposees": [
+      "adjectif"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "horrible",
+    "classes_proposees": [
+      "adjectif"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "terrible",
+    "classes_proposees": [
+      "adjectif"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "honnête",
+    "classes_proposees": [
+      "adjectif"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "énorme",
+    "classes_proposees": [
+      "adjectif"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "intelligent",
+    "classes_proposees": [
+      "adjectif"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "vraiment",
+    "classes_proposees": [
+      "adverbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "encore",
+    "classes_proposees": [
+      "adverbe"
+    ],
+    "statut": "suspendu",
+    "motif": "Emploi nominal dans le domaine du spectacle : « un encore » ; vérifier la pertinence scolaire."
+  },
+  {
+    "mot": "beaucoup",
+    "classes_proposees": [
+      "adverbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "assez",
+    "classes_proposees": [
+      "adverbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "tard",
+    "classes_proposees": [
+      "adverbe"
+    ],
+    "statut": "suspendu",
+    "motif": "Emplois nominaux rares ou figés à examiner ; contrôle complémentaire prudent."
+  },
+  {
+    "mot": "seulement",
+    "classes_proposees": [
+      "adverbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "longtemps",
+    "classes_proposees": [
+      "adverbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "tellement",
+    "classes_proposees": [
+      "adverbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "enfin",
+    "classes_proposees": [
+      "adverbe"
+    ],
+    "statut": "suspendu",
+    "motif": "Peut fonctionner comme interjection (« Enfin ! ») ; adverbe seul potentiellement incomplet."
+  },
+  {
+    "mot": "loin",
+    "classes_proposees": [
+      "adverbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "plutôt",
+    "classes_proposees": [
+      "adverbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "exactement",
+    "classes_proposees": [
+      "adverbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "presque",
+    "classes_proposees": [
+      "adverbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "bientôt",
+    "classes_proposees": [
+      "adverbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "ainsi",
+    "classes_proposees": [
+      "adverbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "parfois",
+    "classes_proposees": [
+      "adverbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "ensuite",
+    "classes_proposees": [
+      "adverbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "sûrement",
+    "classes_proposees": [
+      "adverbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "partout",
+    "classes_proposees": [
+      "adverbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "probablement",
+    "classes_proposees": [
+      "adverbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "aider",
+    "classes_proposees": [
+      "verbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "trouver",
+    "classes_proposees": [
+      "verbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "chercher",
+    "classes_proposees": [
+      "verbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "laisser",
+    "classes_proposees": [
+      "verbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "donner",
+    "classes_proposees": [
+      "verbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "arrêter",
+    "classes_proposees": [
+      "verbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "croire",
+    "classes_proposees": [
+      "verbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "demander",
+    "classes_proposees": [
+      "verbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "mourir",
+    "classes_proposees": [
+      "verbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "appeler",
+    "classes_proposees": [
+      "verbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "arriver",
+    "classes_proposees": [
+      "verbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "attendre",
+    "classes_proposees": [
+      "verbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "penser",
+    "classes_proposees": [
+      "verbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "essayer",
+    "classes_proposees": [
+      "verbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "travailler",
+    "classes_proposees": [
+      "verbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "regarder",
+    "classes_proposees": [
+      "verbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "entendre",
+    "classes_proposees": [
+      "verbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "changer",
+    "classes_proposees": [
+      "verbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "garder",
+    "classes_proposees": [
+      "verbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  },
+  {
+    "mot": "rendre",
+    "classes_proposees": [
+      "verbe"
+    ],
+    "statut": "préselection_a_confirmer",
+    "motif": "Aucune autre classe courante relevée lors de cette première revue ; vérification lexicographique indépendante encore nécessaire."
+  }
+]
