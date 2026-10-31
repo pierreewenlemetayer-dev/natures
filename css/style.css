@@ -15,3 +15,11 @@
 .subchoices button{background:#e9efff;border-color:#8199d1;color:#243f78}
 .subchoices button:hover:not(:disabled){background:#d5e2ff;border-color:#5879c2}
 .subchoices button:focus-visible{outline-color:#385ba9}
+
+/* Commandes de sortie papier et PDF. */
+.print-tools{margin:18px auto 0;text-align:center}
+#print-toggle{background:#fff4f7;border-color:#d9a4b8;padding:10px 20px}
+.print-options{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:12px}
+.print-options[hidden]{display:none}
+.print-options button{background:#e9efff;border-color:#8199d1;color:#243f78}
+.print-options button:hover{background:#d5e2ff}
