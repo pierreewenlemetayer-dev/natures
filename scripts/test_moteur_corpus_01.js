@@ -11,6 +11,7 @@ const corpus = JSON.parse(fs.readFileSync(path.join(root,'data/corpus-elargi-01-
 const app = fs.readFileSync(path.join(root,'js/app.js'),'utf8');
 const names = ['nom','adjectif','verbe','adverbe','préposition','coordination','subordination','déterminant','pronom','interjection','onomatopée'];
 const main = x => x.split(':')[0];
+const closed = new Set(['préposition','coordination','subordination','déterminant','pronom']);
 const source = app.match(/function build\(\)\{[\s\S]*?\n\}/);
 assert(source, 'Fonction build() introuvable');
 const sample = vm.runInNewContext(
@@ -37,6 +38,7 @@ for(let i=0;i<trials;i++){
   }
   assert(Object.values(counts).every(x=>x<=2),'Plus de deux questions de même classe');
   assert.equal(counts.nom,2,'Deux noms attendus');
+  assert(deck.filter(x=>closed.has(x.category)).length>=2,'Au moins deux classes fermées attendues');
   assert(deck.some(x=>x.category==='nom'&&x.answers.length===1&&x.answers[0]==='nom'),'Nom non ambigu absent');
 }
 const report={corpus:corpus.length,parties_testees:trials,mots_vus:seen.size,repartition_cibles:classes,publication:false};
